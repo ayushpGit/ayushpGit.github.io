@@ -1,0 +1,42 @@
+Raspberry pi
+-------------        
+
+import RPi.GPIO as GPIO # Import Raspberry Pi GPIO library
+from time import sleep # Import the sleep function from the time module
+
+GPIO.setwarnings(False) # Ignore warning for now
+GPIO.setmode(GPIO.BOARD) # Use physical pin numbering 
+
+GPIO.setup(8, GPIO.OUT, initial=GPIO.LOW)
+# Set pin 8 to be an output pin and set initial value to low (off)
+while True: #initiating loop that runs forever
+GPIO.output (8, GPIO.HIGH) #Turn on the led
+sleep(1) # Sleep for 1 second
+GPIO.output (8, GPIO.LOW) #Turn off the led
+sleep(1) # Sleep for 1 second
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+import RPi.GPIO as GPIO
+import time
+
+GPIO.setmode (GPIO.BOARD) #Set GPIO to pin numbering
+pir 8 #Assign pin 8 to PIR
+GPIO.setup (pir, GPIO.IN) #Setup GPIO pin PIR as input
+print ("Sensor initializing..")
+time.sleep (2) #Give sensor time to startup
+print ("Initialized!")
+print ("Press Ctrl+c to end program")
+
+try:
+while True:
+motion = GPIO.input (pir) #reading the status of the PIR motion sensor
+if motion == 1: #If PIR pin goes high, motion is detected
+print ("Motion Detected!")
+time.sleep(2) #Delay of 2 seconds
+
+except KeyboardInterrupt: #Ctrl+c
+GPIO.cleanup() #reset all GPIO
+print ("Program ended")
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
