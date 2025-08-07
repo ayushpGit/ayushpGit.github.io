@@ -9,7 +9,7 @@
     4. Page Content
     5. Name Block
     6. About Block
-    7. RetroGames Block
+    7. Works Block
     8. SecurityTips Block
     9. Contact Block
    10. Responsive
@@ -601,7 +601,7 @@ h2.about.menu-item:before {
   content: "01";
 }
 
-h2.RetroGames.menu-item:before {
+h2.Works.menu-item:before {
   content: "02";
 }
 
@@ -1394,11 +1394,11 @@ h4.package {
 
 /*-------------------------------------------------------------------
 
-                        7. RetroGames BLOCK
+                        7. Works BLOCK
 
 -------------------------------------------------------------------*/
 
-.RetroGames-block {
+.Works-block {
   position: absolute;
   width: 430px;
   height: 400px;
@@ -1409,15 +1409,15 @@ h4.package {
   z-index: 1;
 }
 
-.dark .RetroGames-block {
+.dark .Works-block {
   border: 1px solid rgba(51, 51, 51, 0.4);
 }
 
-.RetroGames-block:hover {
+.Works-block:hover {
   border: 15px solid rgba(255, 255, 255, 0.1);
 }
 
-.RetroGames-block-container {
+.Works-block-container {
   display: table-cell;
   vertical-align: middle;
   -ms-transform: rotate(34deg);
@@ -1425,9 +1425,9 @@ h4.package {
   transform: rotate(34deg);
 }
 
-/* RetroGames */
+/* Works */
 
-.RetroGames-container {
+.Works-container {
   overflow: hidden;
   position: relative;
 }
@@ -1464,43 +1464,43 @@ h4.package {
   margin-left: 0;
 }
 
-.RetroGames-item {
+.Works-item {
   padding-bottom: 30px;
 }
 
-.RetroGames-item.no-gutter {
+.Works-item.no-gutter {
   padding: 0 0;
   padding-bottom: 0;
 }
 
-.RetroGames-item img {
+.Works-item img {
   width: 100%;
   transition: all 5s;
 }
 
-.RetroGames-column {
+.Works-column {
   overflow: hidden;
   position: relative;
   width: 100%;
   transition: all 1s;
 }
 
-.RetroGames-column:hover {
+.Works-column:hover {
   -webkit-box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.3);
   box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.3);
 }
 
-.RetroGames-column:hover img {
+.Works-column:hover img {
   transform: scale(1.1);
 }
 
-.RetroGames-column:hover .RetroGames-content {
+.Works-column:hover .Works-content {
   opacity: 1;
   cursor: pointer;
 }
 
-.RetroGames-content {
+.Works-content {
   position: absolute;
   z-index: 201;
   top: 50%;
@@ -1509,7 +1509,7 @@ h4.package {
   transform: translateY(-50%);
 }
 
-.RetroGames-content h2 {
+.Works-content h2 {
   color: #fff;
   position: relative;
   width: 100%;
@@ -1523,12 +1523,12 @@ h4.package {
   transition: all 0.6s;
 }
 
-.RetroGames-column:hover .RetroGames-content h2 {
+.Works-column:hover .Works-content h2 {
   margin-top: 20px;
   opacity: 1;
 }
 
-.RetroGames-content p {
+.Works-content p {
   color: #fff;
   font-size: 12px;
   font-weight: 400;
@@ -1543,12 +1543,12 @@ h4.package {
   transition: all 0.9s;
 }
 
-.RetroGames-column:hover .RetroGames-content p {
+.Works-column:hover .Works-content p {
   margin-top: 0;
   opacity: 1;
 }
 
-.RetroGames-content hr {
+.Works-content hr {
   width: 40px;
   height: 1px;
   border: 0;
@@ -1559,7 +1559,7 @@ h4.package {
   transform: translateX(-50%);
 }
 
-.RetroGames-overlay {
+.Works-overlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1569,35 +1569,35 @@ h4.package {
   opacity: 0;
 }
 
-.RetroGames-column:hover .RetroGames-overlay {
+.Works-column:hover .Works-overlay {
   opacity: 0.8;
 }
 
-.classic .RetroGames-content {
+.classic .Works-content {
   background: #f1f3f6;
   position: relative;
   top: 0;
   transform: translateY(0);
 }
 
-.classic .RetroGames-content,
-.classic .RetroGames-content h2,
-.classic .RetroGames-content p {
+.classic .Works-content,
+.classic .Works-content h2,
+.classic .Works-content p {
   opacity: 1;
   text-align: left;
 }
 
-.classic .RetroGames-content h2 {
+.classic .Works-content h2 {
   color: #333;
   padding: 20px 30px 0;
   margin-top: 0;
 }
 
-.classic .RetroGames-column:hover .RetroGames-content h2 {
+.classic .Works-column:hover .Works-content h2 {
   margin-top: 0;
 }
 
-.classic .RetroGames-content p {
+.classic .Works-content p {
   color: #666;
   margin-top: 0;
 }
@@ -2157,7 +2157,7 @@ h4.package {
     left: 702px;
     top: -60px;
   }
-  .RetroGames-block {
+  .Works-block {
     -ms-transform: rotate(-34deg);
     -webkit-transform: rotate(-34deg);
     transform: rotate(-34deg);
@@ -2213,7 +2213,7 @@ h4.package {
     left: 382px;
     top: -151px;
   }
-  .RetroGames-block {
+  .Works-block {
     -ms-transform: rotate(-34deg);
     -webkit-transform: rotate(-34deg);
     transform: rotate(-34deg);
@@ -2261,7 +2261,7 @@ h4.package {
     width: 350px;
     height: 300px;
   }
-  .RetroGames-block {
+  .Works-block {
     -ms-transform: rotate(-34deg);
     -webkit-transform: rotate(-34deg);
     transform: rotate(-34deg);
@@ -2305,7 +2305,7 @@ h4.package {
     left: 382px;
     top: -150px;
   }
-  .RetroGames-block {
+  .Works-block {
     -ms-transform: rotate(-34deg);
     -webkit-transform: rotate(-34deg);
     transform: rotate(-34deg);
@@ -2377,7 +2377,7 @@ h4.package {
     left: 382px;
     top: -150px;
   }
-  .RetroGames-block {
+  .Works-block {
     -ms-transform: rotate(-34deg);
     -webkit-transform: rotate(-34deg);
     transform: rotate(-34deg);
@@ -2433,7 +2433,7 @@ h4.package {
   }
   .name-block,
   .about-block,
-  .RetroGames-block,
+  .Works-block,
   .SecurityTips-block,
   .contact-block {
     position: relative;
@@ -2453,7 +2453,7 @@ h4.package {
   }
   .name-block-container,
   .about-block-container,
-  .RetroGames-block-container,
+  .Works-block-container,
   .SecurityTips-block-container,
   .contact-block-container {
     -ms-transform: rotate(0deg);
@@ -2531,7 +2531,7 @@ h4.package {
   }
   .name-block,
   .about-block,
-  .RetroGames-block,
+  .Works-block,
   .SecurityTips-block,
   .contact-block {
     position: relative;
@@ -2550,7 +2550,7 @@ h4.package {
     border-bottom: none;
   }
   .about-block:hover,
-  .RetroGames-block:hover,
+  .Works-block:hover,
   .SecurityTips-block:hover,
   .contact-block:hover {
     border: none;
@@ -2558,7 +2558,7 @@ h4.package {
   }
   .name-block-container,
   .about-block-container,
-  .RetroGames-block-container,
+  .Works-block-container,
   .SecurityTips-block-container,
   .contact-block-container {
     -ms-transform: rotate(0deg);

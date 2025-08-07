@@ -46,15 +46,15 @@
         });
     });
 
-    $('.RetroGames-block, .menu-item').on('click', function() {
+    $('.Works-block, .menu-item').on('click', function() {
 
-        //RetroGames masonry
-        var $container = $('#RetroGames-container');
+        //Works masonry
+        var $container = $('#Works-container');
         $container.isotope({
             masonry: {
-                columnWidth: '.RetroGames-item'
+                columnWidth: '.Works-item'
             },
-            itemSelector: '.RetroGames-item'
+            itemSelector: '.Works-item'
         });
         $('#filters').on('click', 'li', function() {
             $('#filters li').removeClass('active');
@@ -82,7 +82,7 @@
 
     });
 
-    //RetroGames Modal
+    //Works Modal
     $(document).on('click', '.open-project', function() {
         var projectUrl = $(this).attr("href");
         $('.inline-menu-container').removeClass('showx');
@@ -117,12 +117,12 @@
         $('.menu-item').removeClass('active');
         $('.menu-item.about').addClass('active');
     });
-    //On Click Open RetroGames Block
-    $('.RetroGames-block, .menu-item.RetroGames').on('click', function() {
+    //On Click Open Works Block
+    $('.Works-block, .menu-item.Works').on('click', function() {
         $('.content-blocks').removeClass('showx');
-        $('.content-blocks.RetroGames').addClass('showx');
+        $('.content-blocks.Works').addClass('showx');
         $('.menu-item').removeClass('active');
-        $('.menu-item.RetroGames').addClass('active');
+        $('.menu-item.Works').addClass('active');
     });
     //On Click Open SecurityTips Block
     $('.SecurityTips-block, .menu-item.SecurityTips').on('click', function() {
